@@ -118,6 +118,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="CWz-jm-7oQ" eventType="touchUpInside" id="W2S-ig-q3k"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR6-EB-2eH" customClass="Border_Button" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="74" width="375" height="60"/>
@@ -129,6 +132,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="CWz-jm-7oQ" eventType="touchUpInside" id="dj8-ey-r86"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDy-3C-r4N" customClass="Border_Button" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="375" height="60"/>
@@ -140,10 +146,13 @@
                                         <state key="normal" title="All-gender">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onAllGenderTapped:" destination="CWz-jm-7oQ" eventType="touchUpInside" id="8DE-vN-0d9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdW-6k-9TI" customClass="Border_Button" customModule="swoosh_app" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdW-6k-9TI" customClass="Border_Button" customModule="swoosh_app" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="557" width="375" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.59804137319999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -214,6 +223,7 @@
                         <viewLayoutGuide key="safeArea" id="tfb-OV-I4X"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="VdW-6k-9TI" id="dpf-xz-Pyh"/>
                         <segue destination="V9M-fb-ond" kind="show" identifier="skillVCSegue" id="7OP-3d-BTx"/>
                     </connections>
                 </viewController>
