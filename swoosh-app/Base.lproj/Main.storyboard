@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="WGA-7G-H28">
             <objects>
-                <viewController id="CWz-jm-7oQ" sceneMemberID="viewController">
+                <viewController id="CWz-jm-7oQ" customClass="LeagueVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fcg-3v-Rna">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,6 +210,7 @@
                             <constraint firstItem="446-fg-NrK" firstAttribute="trailing" secondItem="tfb-OV-I4X" secondAttribute="trailing" id="eey-pG-voC"/>
                             <constraint firstItem="tfb-OV-I4X" firstAttribute="trailing" secondItem="VdW-6k-9TI" secondAttribute="trailing" id="fdx-ex-C8c"/>
                             <constraint firstItem="446-fg-NrK" firstAttribute="bottom" secondItem="tfb-OV-I4X" secondAttribute="bottom" id="iuo-N6-GLE"/>
+                            <constraint firstItem="tfb-OV-I4X" firstAttribute="bottom" secondItem="VdW-6k-9TI" secondAttribute="bottom" constant="50" id="nkX-Ps-zuZ"/>
                             <constraint firstItem="3tK-1c-7Yn" firstAttribute="top" secondItem="tcT-mj-AxB" secondAttribute="bottom" constant="75" id="ryw-2d-cXb"/>
                             <constraint firstItem="VdW-6k-9TI" firstAttribute="leading" secondItem="tfb-OV-I4X" secondAttribute="leading" id="ss5-8A-yoc"/>
                             <constraint firstItem="446-fg-NrK" firstAttribute="top" secondItem="fcg-3v-Rna" secondAttribute="top" id="zRP-3O-NCj"/>
@@ -222,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="1074" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="mmk-P8-HdH">
             <objects>
-                <viewController id="V9M-fb-ond" sceneMemberID="viewController">
+                <viewController id="V9M-fb-ond" customClass="SkillVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPe-Ir-2qo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
