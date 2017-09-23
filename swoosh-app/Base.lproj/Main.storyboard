@@ -89,10 +89,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="cPO-MZ-MVH" id="gSY-Jq-et5"/>
-                        <outlet property="swoosh" destination="zda-ej-MvZ" id="2Vq-eI-IQp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +154,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="V9M-fb-ond" kind="show" id="CDg-za-Rfv"/>
+                                    <action selector="onNextTapped:" destination="CWz-jm-7oQ" eventType="touchUpInside" id="d2F-gS-a8N"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tcT-mj-AxB">
@@ -217,6 +213,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tfb-OV-I4X"/>
                     </view>
+                    <connections>
+                        <segue destination="V9M-fb-ond" kind="show" identifier="skillVCSegue" id="7OP-3d-BTx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcQ-NO-eYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jgX-ZM-T8d" userLabel="Exit" sceneMemberID="exit"/>
